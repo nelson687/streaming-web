@@ -1,0 +1,104 @@
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 200px;
+}
+
+body{
+    padding-top: 70px;
+    background-image: url("images/crowdBg.png");
+}
+
+.divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #FFF;
+}
+
+.navbar-search{
+    width: 300px;
+}
+
+.white{
+    color: white;
+}
+
+.player{
+    padding-right: 10px;
+}
+a{
+    cursor: pointer;
+}
+
+#progressBar {
+    cursor: pointer;
+    width: 500px;
+    padding-bottom: 0;
+    height: 10px;
+    position: relative;
+}
+.buffered {
+    height: 10px;
+    position: relative;
+    background: #555;
+    width: 300px;
+}
+
+#buffered-amount {
+    display: block;
+    height: 10px;
+    background-color: #777;
+    width: 0;
+}
+
+.progress {
+    margin-top: -20px;
+    height: 3px;
+    width: 500px;
+    position: relative;
+    cursor: pointer;
+}
+
+#progress-amount {
+    display: block;
+    display: block;
+    height: 5px;
+    background-color: #595;
+    max-width: 500px;
+}
+
+#volume {
+    border: none;
+    height: 2px;
+    background: hsla(335, 4%, 7%, 0.93);
+    width: 75px;
+}
+
+.ui-slider-handle{
+    border-radius:50%;
+    top: -5px !important;
+    width: 11px !important;
+    height: 11px !important;
+    margin-left:-5px !important;
+}
+
+.white{
+    color: white;
+}
+
+
+
+/*
+ng-grid style
+*/
+.ngRow.even {
+    background-color: #ffffff;
+}
+
+.ngRow.odd {
+    background-color: #ffffff;
+}
+
+.ngRow.selected {
+    background-color: #BDD5FF;
+}

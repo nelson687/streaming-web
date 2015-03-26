@@ -1,0 +1,38 @@
+<link href="authentication/auth.css" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+
+<div class="login-form">
+    <tabset>
+        <tab heading="Login">
+            <form class="form-horizontal" role="form">
+                <li>
+                    <input type="text" class="text username-image" placeholder="e-mail" ng-model="formInfo.login.email">
+                </li>
+                <li>
+                    <input type="password" class="password-image" value="Password" placeholder="password" ng-model="formInfo.login.password">
+                </li>
+                <div class="p-container">
+                    <input type="submit" ng-click="authenticate()" value="Log in" >
+                    <div class="clear"> </div>
+               </div>
+            </form>
+        </tab>
+        <tab heading="Register">
+            <form class="form-horizontal" role="form">
+                <li>
+                    <input type="text" class="text username-image" placeholder="e-mail" ng-model="formInfo.register.email">
+                </li>
+                <li>
+                    <input type="password" class="password-image" value="Password" placeholder="password" ng-model="formInfo.register.password">
+                </li>
+                <div class="p-container">
+                    <input type="submit" ng-click="register()" value="Sign up" >
+                    <div class="clear"> </div>
+                </div>
+            </form>
+        </tab>
+    </tabset>
+</div>
+

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/app">Player</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a class="player glyphicon {{playerIcon}} white" ng-click="control()"></a></li>
+                <li><a class="player glyphicon glyphicon-backward white" ng-click="prevSong()"></a></li>
+                <li><a class="player glyphicon glyphicon-forward white" ng-click="nextSong()"></a></li>
+                <li><p class="white">{{songTime}}</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--
+    <div class="buffered">
+        <div id="buffered-amount"></div>
+    </div>
+    -->
+    <span class="glyphicon glyphicon-volume-up white" data-ng-init="volumeBar()">
+        <div id="volume"></div>
+    </span>
+        <div class="progress" data-ng-init="progressBar()">
+            <div id="progress-amount" ng-style="{'width': progressBarWidth}"></div>
+        </div>
+
+
+</nav>

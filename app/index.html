@@ -1,0 +1,26 @@
+<html ng-app="streamingWeb">
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="main/main.js"></script>
+    <script src="authentication/auth.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular-grid/build/ng-grid.js"></script>
+    <script src="lib/ngStorage/ngStorage.js"></script>
+    <!--<script src="bower_components/ngstorage/ngStorage.js"></script>-->
+    <script src="someOtherView/view1.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/angular-grid/ng-grid.css">
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/overcast/jquery-ui.css" />
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+<div ng-include="'navBar.html'"></div>
+
+<div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!--
+<link rel="stylesheet" href="main/main.css">
+-->
+<div class="input-group">
+        <span class="input-group-addon">
+            <span class="glyphicon glyphicon-search"></span>
+        </span>
+    <input type="text" class="form-control" ng-model="searchSong.filterText" placeholder="Filter results">
+</div>
+
+<div class="gridStyle" ng-grid="gridOptions" ng-click="play(gridOptions.selectedItems[0])"></div>
+
+
+<form id="uploadForm"
+      enctype="multipart/form-data"
+      method="post">
+    <input type="file" id="mp3Input" name="mp3Input" onchange="angular.element(this).scope().upload(this.files)" multiple/>
+    <button type="submit" class="btn btn-success" ng-click="upload()">Upload</button>
+</form>
+
+<div ng-include="'navBarBottom.html'"></div>
